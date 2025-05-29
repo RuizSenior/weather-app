@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  background: linear-gradient(135deg, #1b2853, #13277c );
+  color: #ffffff;
+  min-height: 100dvh;
+}
+
+.container {
+  max-width: 400px;
+  margin: 60px auto 0 auto;
+  background: rgba(20, 30, 60, 0.95);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  padding: 32px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+#cityInput {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  outline: none;
+  background: #25346a;
+  color: #fff;
+  transition: background 0.2s;
+}
+
+#cityInput:focus {
+  background: #31448c;
+}
+
+#getWeatherBtn {
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 8px;
+  border: none;
+  background: #61d1da;
+  color: #1b2853;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin-bottom: 20px;
+}
+
+#getWeatherBtn:hover {
+  background: #1b2853;
+  color: #61d1da;
+}
+
+#weatherResult {
+  width: 100%;
+  min-height: 60px;
+  background: rgba(97, 209, 218, 0.08);
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  text-align: center;
+  word-break: break-word;
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 98vw;
+    padding: 18px 6vw 18px 6vw;
+    margin-top: 24px;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  #cityInput,
+  #getWeatherBtn,
+  #weatherResult {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
