@@ -5,11 +5,14 @@ body {
   background: linear-gradient(135deg, #1b2853, #13277c );
   color: #ffffff;
   min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .container {
   max-width: 600px;
-  margin: 60px auto 0 auto;
   background: rgba(20, 30, 60, 0.95);
   border-radius: 18px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
@@ -68,11 +71,12 @@ h1 {
   min-height: 60px;
   background: rgba(97, 209, 218, 0.08);
   border-radius: 8px;
-  padding: 12px 0;
+  padding: 12px;
   margin-top: 10px;
   font-size: 1.1rem;
   text-align: center;
   word-break: break-word;
+  box-sizing: border-box;
 }
 
 @media (max-width: 500px) {
@@ -90,4 +94,8 @@ h1 {
     font-size: 1rem;
     padding: 10px;
   }
+  #weatherContent {
+    flex-direction: column;
+  }
+
 }
